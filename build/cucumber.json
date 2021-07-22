@@ -1,0 +1,162 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-07-22T07:48:35.077Z",
+        "before": [
+          {
+            "result": {
+              "duration": 9110801000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefs.HomePageStepDef.BeforeSteps()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Search for a costly flight from sfo to nyc and verify the flight details",
+        "description": "",
+        "id": "orbitz-flight-search;search-for-a-costly-flight-from-sfo-to-nyc-and-verify-the-flight-details",
+        "after": [
+          {
+            "result": {
+              "duration": 343381000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefs.HomePageStepDef.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 756733000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I navigate to orbitz website",
+            "match": {
+              "location": "stepdefs.HomePageStepDef.i_navigate_to_orbitz_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3667837000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I search for roundtrip flights to \"San Francisco\" and \"New York\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"San Francisco\"",
+                  "offset": 34
+                },
+                {
+                  "val": "\"New York\"",
+                  "offset": 54
+                }
+              ],
+              "location": "stepdefs.HomePageStepDef.i_search_for_roundtrip_flights_to_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 9489457000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I depart 2 weeks from today and arrival 3 weeks from today",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 9
+                },
+                {
+                  "val": "3",
+                  "offset": 40
+                }
+              ],
+              "location": "stepdefs.HomePageStepDef.i_depart_weeks_from_today_and_arrival_weeks_from_today(int,int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5204396000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click on search",
+            "match": {
+              "location": "stepdefs.HomePageStepDef.i_click_on_search()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8232711000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I Assert that the search results are rendered correctly",
+            "match": {
+              "location": "stepdefs.HomePageStepDef.i_assert_that_the_search_results_are_rendered_correctly()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 28784297000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I search for Nonstop and Most expensive flights for round trip",
+            "match": {
+              "location": "stepdefs.HomePageStepDef.i_search_for_nonstop_and_most_expensive_flights_for_round_trip()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1277910000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I skip the ad",
+            "match": {
+              "location": "stepdefs.HomePageStepDef.i_skip_the_ad()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5397219000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Assert the flight details \u0026 price on the flight review page.",
+            "match": {
+              "location": "stepdefs.HomePageStepDef.assert_the_flight_details_price_on_the_flight_review_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Orbitz flight search",
+    "description": "  As a user\n  I should be able to navigate, search and book an expensive flight in orbtiz website from SFO to NYC round trip",
+    "id": "orbitz-flight-search",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features.orbitz/search_nonstop_costly_flight.feature",
+    "tags": []
+  }
+]
