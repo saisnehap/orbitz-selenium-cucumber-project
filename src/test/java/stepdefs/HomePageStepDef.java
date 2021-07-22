@@ -37,6 +37,9 @@ public class HomePageStepDef {
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("https://www.orbitz.com/");
+        String actual = driver.getTitle();
+        String expected = "Orbitz Hotel Deals, Flights, Cheap Vacations & Rental Cars";
+        Assert.assertEquals(actual, expected);
     }
 
     @Given("I navigate to orbitz website")
