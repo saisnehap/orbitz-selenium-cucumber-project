@@ -10,7 +10,7 @@ Clone the repo:
 
 Git:
 ```
-$ git clone git@github.com:testdouble/java-cucumber-example.git
+$ git clone https://github.com/saisnehap/orbitz-selenium-cucumber-project.git
 ```
 
 ## Prerequisites
