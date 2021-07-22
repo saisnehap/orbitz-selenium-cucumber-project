@@ -8,9 +8,9 @@ A sample project for Orbitz-To book a expensive round trip flight
 
 Clone the repo:
 
-Git:
+Git repo:
 ```
-$ git clone git@github.com:testdouble/java-cucumber-example.git
+$ git clone https://github.com/saisnehap/orbitz-selenium-cucumber-project.git 
 ```
 
 ## Prerequisites
@@ -25,8 +25,6 @@ installed to your system.
 Download chromedriver.exe from [a link](https://chromedriver.chromium.org/downloads) and place it in the following folder `drivers/chromeDriver/chromedriver`
 
 ---------------------------------------------------------
-
-## Verify installation
 
 ## Use Maven
 

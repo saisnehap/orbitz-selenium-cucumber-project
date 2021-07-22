@@ -32,11 +32,14 @@ public class HomePageStepDef {
 
     @Before
     public void BeforeSteps() {
-        System.setProperty("webdriver.chrome.driver", "drivers/chromeDriver/chromedriver 3");
+        System.setProperty("webdriver.chrome.driver", "drivers/chromeDriver/chromedriver");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("https://www.orbitz.com/");
+        String actual = driver.getTitle();
+        String expected = "Orbitz Hotel Deals, Flights, Cheap Vacations & Rental Cars";
+        Assert.assertEquals(actual, expected);
     }
 
     @Given("I navigate to orbitz website")
